@@ -6,8 +6,8 @@ import { AuthContext } from "./contexts/auth";
 import Login from "./components/Login";
 
 const App = () => {
+  console.log("opa");
   const { user } = useContext(AuthContext);
-
   if (!user) return <Login />;
 
   return (
